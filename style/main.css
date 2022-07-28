@@ -1,6 +1,7 @@
 :root{
     --preto:black;
-    --roxo:purple;
+    --branco:white;
+    --cinza: rgb(35, 35, 35);
 
 }
 *{
@@ -8,15 +9,35 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: sans-serif;
-    font-size: 14px;
+    font-family: 'Arial Black', Times;
 }
+
 body{
-    background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    background: var(--cinza);
+    font-family: 'Arial Black', Times;
 }
 
 header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
-    
+}
+
+.logo{
+    text-decoration: none;
+    width: 50%;
+    color: var(--branco);
+    justify-content: start;
+    border: 5px solid aqua;
+}
+.nav-bar{
+    border: 5px solid aqua;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: var(--branco);
 }
