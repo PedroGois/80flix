@@ -1,16 +1,9 @@
 :root{
-<<<<<<< HEAD
-    --preto:black;
-    --branco:white;
-    --cinza: rgb(35, 35, 35);
-=======
     --letra:#9b9b9b;
     --letrahover:#348e91;
     --fundobotao:#001c1d;
     --fundo:rgb(31, 31, 31);
     --fundograd:linear-gradient(var(--letrahover),var(--fundo),var(--fundo),var(--fundo),var(--fundo),var(--fundo),var(--fundo),var(--fundo));
-    
->>>>>>> e22a7ea775e968bcafa5a60d5f187a3d277f66d7
 
 }
 *{
@@ -18,40 +11,6 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-<<<<<<< HEAD
-    font-family: 'Arial Black', Times;
-}
-
-body{
-    background: var(--cinza);
-    font-family: 'Arial Black', Times;
-}
-
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-.logo{
-    text-decoration: none;
-    width: 50%;
-    color: var(--branco);
-    justify-content: start;
-    border: 5px solid aqua;
-}
-.nav-bar{
-    border: 5px solid aqua;
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.nav-bar a{
-    text-decoration: none;
-    color: var(--branco);
-}
-=======
     font-family:Arial, Helvetica, sans-serif;
 }
 /*elementos base e header*/
@@ -107,7 +66,7 @@ header .container{
     /*----Filme Principal*/
 .filmeprincipal{
     font-size: 20px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px;
     background: linear-gradient(rgb(31, 31, 31),rgb(31, 31, 31,.50)100%), url("/80flix/img/ComandoParaMatar.jpg");
     background-size: cover;
     height: 80vh;
@@ -116,18 +75,35 @@ header .container{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    border: #348e91 solid 5px;
 }
 .filmeprincipal .container{
-    width: 70%;
-}
-
-.filmeprincipal .descricao{
-    margin-bottom: 20px;
-}
-
-/* 
-main .filmeprincipal .container .botoes{
+    width: 50%;
     display: flex;
-    flex-direction: row;
-} */
->>>>>>> e22a7ea775e968bcafa5a60d5f187a3d277f66d7
+    flex-direction: column;
+    justify-content: space-around;
+    border: #348e91 solid 5px;
+}
+.filmeprincipal .container .titulo{
+    
+}
+
+.filmeprincipal .container .descricao{
+    margin-bottom: 20px;
+    border: #348e91 solid 5px;
+}
+
+.filmeprincipal .container .caixabotoes{
+    border: #348e91 solid 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+}
+.filmeprincipal .container .botao{
+    color: var(--letrahover);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 5px;
+    margin: 0px 15px 0px 15px;
+}
