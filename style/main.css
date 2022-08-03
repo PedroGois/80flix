@@ -1,11 +1,11 @@
 /*Elementos Base*/
 
 :root{
-    --letrabotao:#b4b4b4;
-    --letrahover:#348e91;
-    --fundobotao:#001c1d;
+    --letra:#b4b4b4;
+    --azulclaro:rgb(52, 142, 145);
+    --botaohover:#001c1d;
     --fundo:rgb(31, 31, 31);
-    --fundograd:linear-gradient(var(--letrahover),var(--fundo),var(--fundo),var(--fundo),var(--fundo),var(--fundo),var(--fundo), var(--fundo),var(--fundo), var(--fundo),var(--fundo), var(--fundo),var(--fundo),var(--fundo));
+    --fundoazul:rgba(52, 142, 145, .50);
 
 }
 *{
@@ -26,14 +26,12 @@ header .container{
     display: flex;
     background-image: var(--fundo);
     margin: 0px;
-    padding: 10px 15px;
+    padding: 2px 15px;
     justify-content: space-between;
     align-items: center;
 
 }
-header .container:hover{
-    background-image: var(--fundograd);
-}
+
     
 
 .nav-bar{
@@ -45,12 +43,12 @@ header .container:hover{
     width: 75%;
     display: flex;
     justify-content: space-between;
-    color: var(--letrahover);
+    color: var(--azulclaro);
     font-weight:bolder;
     font-size: 300%;
 }
 .nav-bar .botao{
-    color: var(--letrabotao);
+    color: var(--letra);
     font-weight:500;
     display: flex;
 
@@ -59,20 +57,13 @@ header .container:hover{
     
 }
 .nav-bar .botao:hover{
-    color: white;
+    color: var(--azulclaro);
     display: flex;
     align-items: flex-start;
     font-weight:520;
-    border-bottom:solid 1px var(--letrahover);
+    border-bottom:solid 1px var(--azulclaro);
 }
-.logo{
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-    color: var(--letrahover);
-    font-weight:bolder;
-    font-size: 300%;
-}
+
 
 /*Corpo*/
 
@@ -97,16 +88,20 @@ header .container:hover{
     padding: auto;
     justify-content: space-around;
 }
+        /* Titulo */
 .filmeprincipal .container .titulo{
-    margin: 20px 0px;
-}
 
+    margin-top: 20%;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+        /* descricao */
 .filmeprincipal .container .descricao{
     font-size: medium;
     margin: 20px 0px;
     
 }
-
+/*botoes filme principal*/
 .filmeprincipal .container .caixabotoes{
     display: flex;
     justify-content: flex-start;
@@ -119,10 +114,21 @@ header .container:hover{
     width:40vh;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    background-color: var(--letrahover);
-    border: var(--letrahover) solid 2px;
+    background-color: var(--fundoazul);
+    border: var(--fundoazul) solid 2px;
     border-radius: 10px 10px;
     padding: 5px;
     margin: 5px 10px;
+    cursor: pointer;
+    transition: .2s ease all;
+
+}
+.filmeprincipal .container .botao:hover{
+    background-color: var(--botaohover);
+    
+}
+
+.filmeprincipal .container .botao i{
+    margin-right: 8px;
 
 }
