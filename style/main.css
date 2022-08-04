@@ -13,114 +13,113 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
     background-color: var(--fundo);
     color: white;
 }
-
-/*Nav-bar*/
+.container{
+    padding: 30px;
+}
+.botao{
+    color: var(--letra);
+    font-size: 17px;
+}
+/*Container Barra de navegação*/
 
 header .container{
     display: flex;
-    background-image: var(--fundo);
-    margin: 0px;
-    padding: 2px 15px;
+    background-color: var(--fundo);
     justify-content: space-between;
     align-items: center;
-
 }
 
-    
+.logo{
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    color: var(--azulclaro);
+    font-weight:bolder;
+    font-size: 400%;
+}
 
 .nav-bar{
     width: 25%;
     display: flex;
     justify-content: space-evenly;
 }
-.logo{
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-    color: var(--azulclaro);
-    font-weight:bolder;
-    font-size: 300%;
-}
-.nav-bar .botao{
-    color: var(--letra);
-    font-weight:500;
-    display: flex;
 
-    padding: 5px;
-    border-bottom: solid 1px var(--fundo);
-    
+.nav-bar .botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:solid 1px var(--fundo);
 }
 .nav-bar .botao:hover{
     color: var(--azulclaro);
-    display: flex;
-    align-items: flex-start;
-    font-weight:520;
     border-bottom:solid 1px var(--azulclaro);
 }
 
 
-/*Corpo*/
+/*Corpo do site*/
 
-    /*----Filme Principal*/
+    /*----Filme Principal base*/
+
 .filmeprincipal{
     font-size: 20px;
-    padding: 0px 20px;
-    background: linear-gradient(rgb(31, 31, 31),rgb(31, 31, 31,.50)100%), url("/80flix/img/ComandoParaMatar.jpg");
+    background: linear-gradient(rgb(31, 31, 31),rgb(31, 31, 31,.50)100%), url("/80flix/img/Posteres/ComandoParaMatar.jpg");
     background-size: cover;
-    height: 80vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-}
-.filmeprincipal .container{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: auto;
-    justify-content: space-around;
-}
-        /* Titulo */
-.filmeprincipal .container .titulo{
-
-    margin-top: 20%;
-    font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-        /* descricao */
-.filmeprincipal .container .descricao{
-    font-size: medium;
-    margin: 20px 0px;
-    
-}
-/*botoes filme principal*/
-.filmeprincipal .container .caixabotoes{
+    height: 70vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 5px;
-    margin: 10px 0px;
+
+}
+.filmeprincipal .container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+        /* Titulo */
+.filmeprincipal .container .titulo{
+    margin: 20px 0px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+        /* descricao */
+.filmeprincipal .container .descricao{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    transition: .3s ease all;
+}        
+.filmeprincipal .container .descricao:hover{
+    margin: 20px 0px;
+    padding: 15px 0px;      
+}
+/*botoes filme principal*/
+.filmeprincipal .container .caixabotoes{
+    margin: 20px 0px;
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
 }
 .filmeprincipal .container .botao{
     color: white;
-    width:40vh;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
     background-color: var(--fundoazul);
     border: var(--fundoazul) solid 2px;
     border-radius: 10px 10px;
-    padding: 5px;
-    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 10px 30px;
     cursor: pointer;
-    transition: .2s ease all;
+    transition: .3s ease all;
 
 }
 .filmeprincipal .container .botao:hover{
@@ -131,4 +130,16 @@ header .container{
 .filmeprincipal .container .botao i{
     margin-right: 8px;
 
+}
+
+/* Carrosel */
+.carrosel-filme{
+    height: 10vh;
+    padding: 20px;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    
+    display: block;
 }
