@@ -20,11 +20,12 @@ body{
     color: white;
 }
 .container{
-    padding: 30px;
+    margin: 5px 10px;
+    padding: 10px;
 }
 .botao{
     color: var(--letra);
-    font-size: 17px;
+    font-size: 15px;
 }
 /*Container Barra de navegação*/
 
@@ -41,11 +42,11 @@ header .container{
     justify-content: flex-start;
     color: var(--azulclaro);
     font-weight:bolder;
-    font-size: 400%;
+    font-size: 300%;
 }
 
 .nav-bar{
-    width: 25%;
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -67,7 +68,7 @@ header .container{
     /*----Filme Principal base*/
 
 .filmeprincipal{
-    font-size: 20px;
+    font-size: 15px;
     background: linear-gradient(rgb(31, 31, 31),rgb(31, 31, 31,.50)100%), url("/80flix/img/Posteres/ComandoParaMatar.jpg");
     background-size: cover;
     height: 70vh;
@@ -85,7 +86,7 @@ header .container{
         /* Titulo */
 .filmeprincipal .container .titulo{
     margin: 20px 0px;
-    font-size: 50px;
+    font-size: 35px;
     display: flex;
     align-items: center;
     
@@ -115,9 +116,8 @@ header .container{
     border-radius: 10px 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    padding: 10px 30px;
+    margin: 0px 10px;
+    padding: 10px 10px;
     cursor: pointer;
     transition: .3s ease all;
 
@@ -135,11 +135,23 @@ header .container{
 /* Carrosel */
 .carrosel-filme{
     height: 10vh;
-    padding: 20px;
+    padding: 20px 0px;
 }
 .box-filme{
     height: 100%;
     width: 100%;
     
+    
     display: block;
+}
+.item{
+    background-color: #000;
+    opacity: 0.6;
+    transition: 0.3s ease all;
+
+}
+.item:hover{
+    background-color: #000;
+    opacity: 1;
+    cursor:pointer;
 }
