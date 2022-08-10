@@ -20,7 +20,7 @@ body{
     color: white;
 }
 .container{
-    margin: 5px 10px;
+    margin: 5px 20px;
     padding: 10px;
 }
 .botao{
@@ -30,6 +30,7 @@ body{
 /*Container Barra de navegação*/
 
 header .container{
+    padding: 5px 10px;
     display: flex;
     background-color: var(--fundo);
     justify-content: space-between;
@@ -42,11 +43,11 @@ header .container{
     justify-content: flex-start;
     color: var(--azulclaro);
     font-weight:bolder;
-    font-size: 300%;
+    font-size: 400%;
 }
 
 .nav-bar{
-    width: 70%;
+    width: 40%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -93,7 +94,6 @@ header .container{
 }
         /* descricao */
 .filmeprincipal .container .descricao{
-    margin: 20px 0px;
     display: flex;
     align-items: center;
     transition: .3s ease all;
@@ -133,6 +133,16 @@ header .container{
 }
 
 /* Carrosel */
+.filmes{
+    padding: 10px 0px;
+}
+.titulo-carrosel{
+    color: var(--letra);
+    font-size: 35px;
+}
+.titulo-carrosel:hover{
+    color: var(--azulclaro);
+}
 .carrosel-filme{
     height: 10vh;
     padding: 20px 0px;
@@ -154,4 +164,46 @@ header .container{
     background-color: #000;
     opacity: 1;
     cursor:pointer;
+}
+
+/*aviso*/
+.aviso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+    width: 60%;
+    margin:auto;
+}
+.aviso i{
+    color: var(--azulclaro);
+}
+.aviso p{
+    color: var(--azulclaro);
+    font-size: 50px;
+}
+.aviso .caixabotoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30%;
+}
+.aviso .caixabotoes .botao{
+    color: white;
+    background-color: var(--fundoazul);
+    border: var(--fundoazul) solid 2px;
+    border-radius: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.aviso .caixabotoes .botao i{
+    color: white;
+    font-size: 25px;
+    padding-right: 10px;
 }
