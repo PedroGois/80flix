@@ -37,7 +37,7 @@ header .container{
     align-items: center;
 }
 
-.logo{
+.container .logo{
     width: 75%;
     display: flex;
     justify-content: flex-start;
@@ -70,7 +70,7 @@ header .container{
 
 .filmeprincipal{
     font-size: 15px;
-    background: linear-gradient(rgb(31, 31, 31),rgb(31, 31, 31,.50)100%), url("/80flix/img/Posteres/ComandoParaMatar.jpg");
+    background: linear-gradient(rgb(31, 31, 31),rgb(31, 31, 31,.50)100%), url("/img/Posteres/ComandoParaMatar.jpg");
     background-size: cover;
     height: 70vh;
     display: flex;
@@ -133,31 +133,29 @@ header .container{
 }
 
 /* Carrosel */
-.filmes{
-    padding: 10px 0px;
-}
 .titulo-carrosel{
     color: var(--letra);
     font-size: 35px;
+    text-align: center;
+    padding: 20px 30px ;
+    margin: 10px 0px;
 }
-.titulo-carrosel:hover{
-    color: var(--azulclaro);
+.carrosel-caixa{
+    margin-top: 10px;
 }
-.carrosel-filme{
-    height: 10vh;
-    padding: 20px 0px;
-}
+
 .box-filme{
     height: 100%;
     width: 100%;
-    
-    
     display: block;
+    box-shadow:0 0 10px var(--azulclaro);
 }
+
 .item{
     background-color: #000;
     opacity: 0.6;
     transition: 0.3s ease all;
+    
 
 }
 .item:hover{
@@ -207,3 +205,29 @@ header .container{
     font-size: 25px;
     padding-right: 10px;
 }
+
+/* Sobre Nós */
+.Sobre-80flix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+.Sobre-80flix p{
+    padding: 20px;
+    text-align: center;
+}
+.Sobre-80flix .logo{
+    padding: 10px 0px;
+    margin: 10px 0px;
+    justify-content: center;
+    border-bottom:solid 1px #b4b4b4;
+}
+.Sobre-80flix .contato{
+    font-weight:bolder;
+    font-size: 200%;
+    color: var(--azulclaro);
+    justify-content: center;
+}
+
