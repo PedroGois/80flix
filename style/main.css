@@ -21,7 +21,7 @@ body{
 }
 .container{
     margin: 5px 20px;
-    padding: 10px;
+    padding: 5px;
 }
 .botao{
     color: var(--letra);
@@ -43,7 +43,7 @@ header .container{
     justify-content: flex-start;
     color: var(--azulclaro);
     font-weight:bolder;
-    font-size: 400%;
+    font-size: 300%;
 }
 
 .nav-bar{
@@ -70,9 +70,9 @@ header .container{
 
 .filmeprincipal{
     font-size: 15px;
-    background: linear-gradient(rgb(31, 31, 31),rgb(31, 31, 31,.50)100%), url("/img/Posteres/ComandoParaMatar.jpg");
+    background: linear-gradient(rgb(0,0,0,.60),rgb(0,0,0,.60)20%), url("/80flix/img/Posteres/ComandoParaMatar.jpg");
     background-size: cover;
-    height: 70vh;
+    height: 90vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -176,17 +176,19 @@ header .container{
 }
 .aviso i{
     color: var(--azulclaro);
+    font-size: 70px;
 }
 .aviso p{
     color: var(--azulclaro);
-    font-size: 50px;
+    font-size: 40px;
+    text-align: center;
 }
 .aviso .caixabotoes{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 30%;
+    height: 40%;
 }
 .aviso .caixabotoes .botao{
     color: white;
@@ -200,6 +202,11 @@ header .container{
     cursor: pointer;
     transition: .3s ease all;
 }
+.aviso .caixabotoes .botao:hover{
+    
+    background-color: var(--botaohover);
+}
+
 .aviso .caixabotoes .botao i{
     color: white;
     font-size: 25px;
@@ -211,23 +218,54 @@ header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
-    margin: auto;
+    justify-content: space-evenly;
+    margin: 0px 50px;
+    padding: 0px;
 }
 .Sobre-80flix p{
-    padding: 20px;
+    border-top: #b4b4b4 solid 1px;
+    padding: 20px 50px;
     text-align: center;
 }
 .Sobre-80flix .logo{
     padding: 10px 0px;
-    margin: 10px 0px;
+    font-size: 30px;
     justify-content: center;
-    border-bottom:solid 1px #b4b4b4;
+    
 }
-.Sobre-80flix .contato{
-    font-weight:bolder;
-    font-size: 200%;
+.Sobre-80flix .contato-tit{
+    padding: 10px 50px;
+    margin: 10px 0px;
+    font-size: 20px;
     color: var(--azulclaro);
     justify-content: center;
+    border-bottom: #b4b4b4 solid 1px;
+    
 }
+.Sobre-80flix .contatos{
+    font-size: 300%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.contatos a{ color:var(--azulclaro);text-decoration: none;}
+.Sobre-80flix .botao{
+    color: white;
+    margin-top: 20px;
+    background-color: var(--fundoazul);
+    border: var(--fundoazul) solid 2px;
+    border-radius: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.Sobre-80flix .botao:hover{
+    
+    background-color: var(--botaohover);
+    
+}
+
 
