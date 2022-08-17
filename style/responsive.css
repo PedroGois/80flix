@@ -1,31 +1,58 @@
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
+    
+    /*Nav-bar*/
+    
     header .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
-    header .logo{
-        display: flex;
+    header .container .logo{
     justify-content: center;
+    margin: 20px 0px;
     }
     header .container .nav-bar{
         display: flex;
+        width: 80%;
         align-items: space-evenly;
     }
+
+
+
+    /*Filme principal*/
+
     .filmeprincipal{
         height: 80vh;
     }
     .filmeprincipal .container{
         width: 100%;
     }
+    .filmeprincipal .container .titulo{
+        text-align: center;
+    }
     .filmeprincipal .container .caixabotoes{
         margin: 20px 0px;
         display: flex;
         flex-direction: column;
-        
         align-items: center;
     }
     .filmeprincipal .container .botao{
         margin: 10px 0px;
     }
+
+    /*tela sobre nos*/
+
+    .Sobre-80flix{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+    .Sobre-80flix p{
+        
+        width: 80%;
+    }
+
+
 }
