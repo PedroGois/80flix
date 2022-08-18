@@ -4,7 +4,8 @@
     --letra:#b4b4b4;
     --azulclaro:rgb(52, 142, 145);
     --botaohover:#001c1d;
-    --fundo:rgb(31, 31, 31);
+    --fundo:rgb(17, 17, 17);
+    --fundonav:rgb(14, 14, 14);
     --fundoazul:rgba(52, 142, 145, .50);
 
 }
@@ -23,21 +24,21 @@ body{
     margin: 5px 20px;
     padding: 5px;
 }
-.botao{
+.botao , .botao-nav{
     color: var(--letra);
     font-size: 15px;
 }
 /*Container Barra de navegação*/
 
-header .container{
-    padding: 5px 10px;
+header .container-nav{
+    padding: 5px 15px;
     display: flex;
-    background-color: var(--fundo);
+    background-color: var(--fundonav);
     justify-content: space-between;
     align-items: center;
 }
 
-.container .logo{
+.container-nav .logo{
     width: 75%;
     display: flex;
     justify-content: flex-start;
@@ -52,13 +53,13 @@ header .container{
     justify-content: space-evenly;
 }
 
-.nav-bar .botao{
+.nav-bar .botao-nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom:solid 1px var(--fundo);
+    border-bottom:solid 1px transparent;
 }
-.nav-bar .botao:hover{
+.nav-bar .botao-nav:hover{
     color: var(--azulclaro);
     border-bottom:solid 1px var(--azulclaro);
 }
@@ -71,6 +72,7 @@ header .container{
 .filmeprincipal{
     font-size: 15px;
     background: linear-gradient(rgb(0,0,0,.60),rgb(0,0,0,.60)20%), url("../img/Posteres/ComandoParaMatar.jpg");
+    background: linear-gradient(rgb(0,0,0,.60),rgb(0,0,0,.60)20%), url("/80flix/img/Posteres/ComandoParaMatar.jpg");
     background-size: cover;
     height: 80vh;
     display: flex;
@@ -86,22 +88,22 @@ header .container{
 
         /* Titulo */
 .filmeprincipal .container .titulo{
-    margin: 40px 0px;
+    margin: 20px 0px;
     
 }
         /* descricao */
 .filmeprincipal .container .descricao{
-    display: flex;
-    align-items: center;
-    transition: .3s ease all;
+    padding: 1ex;
+    border-radius: 1rem;
+    transition: 0.2s ease;
 }        
 .filmeprincipal .container .descricao:hover{
-    margin: 20px 0px;
-    padding: 15px 0px;      
+    box-shadow:  0 0 0.4em var(--azulclaro), inset 0 0 0.4em var(--azulclaro);    
+    
 }
 /*botoes filme principal*/
 .filmeprincipal .container .caixabotoes{
-    margin: 40px 0px;
+    margin: 20px 0px;
     display: flex;
     justify-content:flex-start ;
     align-items: center;
@@ -143,15 +145,16 @@ header .container{
 
 .box-filme{
     height: 100%;
+    margin: 5px 0px;
     width: 100%;
     display: block;
-    box-shadow:0 0 10px var(--azulclaro);
 }
 
 .item{
     background-color: #000;
     opacity: 0.6;
     transition: 0.3s ease all;
+    box-shadow:0 0 2px 2px var(--azulclaro);
     
 
 }
@@ -222,6 +225,7 @@ header .container{
     padding: 10px 0px;
     font-size: 30px;
     justify-content: center;
+    color: var(--azulclaro);
     
 }
 .Sobre-80flix p{
@@ -268,6 +272,10 @@ header .container{
     
     background-color: var(--botaohover);
     
+}
+
+.botao:hover{
+    box-shadow: inset 0 0 1em var(--azulclaro);
 }
 
 
